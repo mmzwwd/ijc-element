@@ -142,28 +142,10 @@ const asyncRoutes = [
         meta: { title: 'jsonEditor' }
       },
       {
-        path: 'avatar-upload',
-        component: 'views/components-demo/avatar-upload',
-        name: 'AvatarUploadDemo',
-        meta: { title: 'avatarUpload' }
-      },
-      {
-        path: 'dropzone',
-        component: 'views/components-demo/dropzone',
-        name: 'DropzoneDemo',
-        meta: { title: 'dropzone' }
-      },
-      {
         path: 'sticky',
         component: 'views/components-demo/sticky',
         name: 'StickyDemo',
         meta: { title: 'sticky' }
-      },
-      {
-        path: 'count-to',
-        component: 'views/components-demo/count-to',
-        name: 'CountToDemo',
-        meta: { title: 'countTo' }
       },
       {
         path: 'mixin',
@@ -183,24 +165,6 @@ const asyncRoutes = [
         name: 'DragDialogDemo',
         meta: { title: 'dragDialog' }
       },
-      {
-        path: 'drag-select',
-        component: 'views/components-demo/drag-select',
-        name: 'DragSelectDemo',
-        meta: { title: 'dragSelect' }
-      },
-      {
-        path: 'dnd-list',
-        component: 'views/components-demo/dnd-list',
-        name: 'DndListDemo',
-        meta: { title: 'dndList' }
-      },
-      {
-        path: 'drag-kanban',
-        component: 'views/components-demo/drag-kanban',
-        name: 'DragKanbanDemo',
-        meta: { title: 'dragKanban' }
-      }
     ]
   },
   {

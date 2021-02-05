@@ -119,7 +119,7 @@ npm run lint -- --fix
 - Components
   - clipboard        剪贴板 84.2 KB
   - core-js          JavaScript的模块化标准库
-  - driver.js        引导页
+  <!-- - driver.js        引导页 -->
   - FileSaver.js     客户端保存文件的解决方案
 
   - Fusejs           轻量级模糊搜索，具有零依赖性
@@ -131,13 +131,13 @@ npm run lint -- --fix
   - pinyin           汉字拼音转换工具。
   - screenfull       进入全屏
   - script-loader    脚本加载器
-  - sortablejs       插件实现拖拽排序效果
+  <!-- - sortablejs       插件实现拖拽排序效果 -->
   - tui-editor       富文本编辑器的使用
-  - vue-count-to    （数字滚动）插件
+  <!-- - vue-count-to    （数字滚动）插件 -->
   - vue-i18n         国际化
   - vue-router       路由
-  - vue-splitpane    垂直水平分割窗口)插件
-  - vuedraggable     拖拽功能的
+  <!-- - vue-splitpane    垂直水平分割窗口)插件 -->
+  <!-- - vuedraggable     拖拽功能的 -->
   - vuex             状态管理
   - xlsx             导入导出功能
 
