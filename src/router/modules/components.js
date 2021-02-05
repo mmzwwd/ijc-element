@@ -19,12 +19,6 @@ const componentsRouter = {
       meta: { title: 'tinymce' }
     },
     {
-      path: 'split-pane',
-      component: () => import('@/views/components-demo/split-pane'),
-      name: 'SplitpaneDemo',
-      meta: { title: 'splitPane' }
-    },
-    {
       path: 'avatar-upload',
       component: () => import('@/views/components-demo/avatar-upload'),
       name: 'AvatarUploadDemo',

@@ -18,10 +18,8 @@
 </template>
 
 <script>
-import pdf from 'vue-pdf'
 import axios from 'axios'
 export default {
-  components: { pdf },
   data() {
     return {
       currentPage: 0, // pdf文件页码
@@ -42,13 +40,13 @@ export default {
         method: 'get',
         type: 'application/pdf;charset=UTF-8',
         url: 'http://api.yingheit.com/tutorBase/downLoadPdf',
-        headers: { 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXJyZW50VGltZSI6MTYxMjI0NTM4NTE2NSwiaXNzIjoiYXV0aDAiLCJleHAiOjE2MTIyNDU2ODUsImFjY291bnQiOiIzNzA4MjkxOTk2MDUyOTczMTQifQ.ugka4M5y85MIyHxdk5dsv7NVQreX-5EwKRhInfOixY0' },
+        headers: { 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjdXJyZW50VGltZSI6MTYxMjQzMDA3NjM1MSwiaXNzIjoiYXV0aDAiLCJleHAiOjE2MTI0MzAzNzYsImFjY291bnQiOiIzNzA4MjkxOTk2MDUyOTczMTQifQ.VVygDRBR1ZNyagaaL727UBrTSejd7IUbNJOW6K3sv3k' },
         responseType: 'arraybuffer'
       }).then(function(response) {
         const a = 'http://www.windriver.com.cn/downloads/pdfviewer/web/viewer.aspx?pdfurl=/downloads/files/wp-requirements-virtualization-next-gen-industrial-cs-white-paper-cn.pdf'
         const b = 'https://file.keking.cn/onlinePreview?url=https%3A%2F%2Ffile.keking.cn%2Fdemo%2F3707.pdf.pdf'
         const pdfUrl = then.getObjectURL(response.data)
-        then.src = './static/web/viewer.html'
+        then.src = './static/web/viewer.html?file=' +encodeURIComponent(pdfUrl)
         sessionStorage.setItem('_imgUrl', response.data)
         console.log(encodeURIComponent(pdfUrl))
       })
